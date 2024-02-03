@@ -15,7 +15,7 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: ['swiper/css/swiper.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: ['~/plugins/swiper.js'],
@@ -31,7 +31,7 @@ export default {
     '@nuxtjs/tailwindcss',
   ],
 
-  // Modules: https://go.nuxtjs.dev/config-modules
+  // Modules: https://go.nuxtjs.dev/config-modulesCurrent Swiper instance object
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',

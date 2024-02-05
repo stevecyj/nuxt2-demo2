@@ -1,16 +1,17 @@
 <template>
   <div>
-    <SwiperDemo />
+    <TailWind />
   </div>
 </template>
 
 <script>
-  export default {
-    data () {
-      return {
-      }
-    },
-    mounted() {
-    }
-  }
+import TailWind from '~/components/TailWind.vue'
+
+export default {
+  components: { TailWind },
+  data() {
+    return {}
+  },
+  mounted() {},
+}
 </script>

@@ -12,6 +12,7 @@
       >
       </pagination>
     </div>
+    <ActivityCard />
   </div>
 </template>
 
@@ -23,6 +24,7 @@ export default {
   components: { TailWind, Pagination },
   data() {
     return {
+      // pagination
       page: 1,
       totalPages: 4,
       total: 40,

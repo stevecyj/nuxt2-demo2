@@ -172,14 +172,8 @@ export default {
       return this.currentPage === this.totalPages
     },
   },
-  mounted() {
-    this.generateData()
-  },
+  mounted() {},
   methods: {
-    generateData() {
-      const items = generateData()
-      this.items = items
-    },
     onClickFirstPage() {
       this.$emit('pagechanged', 1)
     },

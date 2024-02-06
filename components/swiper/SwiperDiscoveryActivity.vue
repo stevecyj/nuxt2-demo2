@@ -115,36 +115,37 @@ export default {
     }
     @media (min-width: 640px) {
       .swiper-scrollbar {
-        width: 60%;
-        margin-bottom: 16%;
-        left: 12%;
+        width: 50%;
+        top: 84%;
+        left: 23%;
       }
     }
     @media (min-width: 768px) {
       .swiper-scrollbar {
         width: 70%;
-        margin-bottom: 13%;
+        top: 84%;
         left: 6%;
       }
     }
     @media (min-width: 1024px) {
       .swiper-scrollbar {
         width: 70%;
-        margin-bottom: 10%;
+        top: 84%;
         left: 9%;
       }
     }
     @media (min-width: 1280px) {
       .swiper-scrollbar {
         width: 83%;
-        margin-bottom: 7.3%;
+        top: 86%;
         left: 3%;
       }
     }
     @media (min-width: 1536px) {
       .swiper-scrollbar {
         width: 85%;
-        margin-bottom: 6%;
+        /* margin-bottom: 6%; */
+        top: 85.5%;
         left: 2%;
       }
     }
@@ -207,7 +208,7 @@ export default {
   .swiper-button-prev,
   .swiper-button-next {
     position: absolute;
-    top: 84%;
+    /* top: 84%; */
     width: calc(44px / 44 * 27);
     width: calc(var(--swiper-navigation-size) / 44 * 27);
     height: 44px;

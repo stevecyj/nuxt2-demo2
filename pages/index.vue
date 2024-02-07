@@ -15,7 +15,8 @@
       </div>
       <!-- <ActivityCard /> -->
       <!-- <SwiperDiscoveryActivity :activities="items" /> -->
-      <SwiperPartner :partners="items" />
+      <!-- <SwiperPartner :partners="items" /> -->
+      <SwiperNewsHonor :news-honors="items" />
     </client-only>
   </div>
 </template>
@@ -25,9 +26,10 @@ import TailWind from '~/components/TailWind.vue'
 import Pagination from '~/components/PaginationSet.vue'
 import { generateDataActivity } from '~/tools/generateData.js'
 import SwiperDemo from '~/components/SwiperDemo.vue'
+import SwiperNewsHonor from '~/components/swiper/SwiperNewsHonor.vue'
 
 export default {
-  components: { TailWind, Pagination, SwiperDemo },
+  components: { TailWind, Pagination, SwiperDemo, SwiperNewsHonor },
   data() {
     return {
       // pagination

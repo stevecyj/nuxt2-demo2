@@ -18,6 +18,7 @@ export default {
   css: [
     { src: '~/assets/scss/components/pagination.scss', lang: 'scss' },
     { src: '~/assets/scss/components/activityCard.scss', lang: 'scss' },
+    { src: '~/assets/scss/components/partnerCard.scss', lang: 'scss' },
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

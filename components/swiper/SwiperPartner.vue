@@ -6,13 +6,12 @@
     >
       <div class="swiper-wrapper swiper">
         <div
-          v-for="(item, key) in activities"
+          v-for="(item, key) in partners"
           :key="key"
           class="swiper-slide bg-tertiary-100"
-          style="width: 412px"
+          style="width: 356px"
         >
-          <!-- <video-card :video="item" :fav="fav" /> -->
-          <activity-card :activities="item" />
+          <partner-card :activities="item" />
         </div>
       </div>
       <div slot="scrollbar" class="swiper-scrollbar"></div>
@@ -24,19 +23,16 @@
 </template>
 
 <script>
-// import VideoCard from '@/components/course/VideoCard'
-// import helpers from '@/libs/helpers'
-import ActivityCard from '@/components/ActivityCard'
+import PartnerCard from '@/components/PartnerCard'
 
 export default {
-  name: 'SwiperDiscoveryActivity',
+  name: 'SwiperPartner',
   components: {
     // VideoCard,
-    ActivityCard,
+    PartnerCard,
   },
-  // mixins: [helpers],
   props: {
-    activities: {
+    partners: {
       type: Array,
       required: true,
     },
@@ -66,7 +62,7 @@ export default {
           },
           1280: {
             slidesPerView: 3,
-            spaceBetween: 0,
+            spaceBetween: 24,
           },
           1024: {
             slidesPerView: 2,

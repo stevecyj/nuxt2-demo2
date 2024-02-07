@@ -1,0 +1,9 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer components {
+  .partner-card {
+    @apply flex overflow-hidden relative flex-col px-9 pt-12 rounded-2xl aspect-[0.59] max-w-[356px] bg-blend-overlay;
+  }
+}

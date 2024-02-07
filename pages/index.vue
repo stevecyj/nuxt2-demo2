@@ -14,7 +14,8 @@
         </pagination>
       </div>
       <!-- <ActivityCard /> -->
-      <SwiperDiscoveryActivity :activities="items" />
+      <!-- <SwiperDiscoveryActivity :activities="items" /> -->
+      <SwiperPartner :partners="items" />
     </client-only>
   </div>
 </template>

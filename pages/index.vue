@@ -2,7 +2,7 @@
   <div id="app" class="min-h-screen bg-gray-100">
     <client-only>
       <div class="h-2 w-100 bg-blue-500"></div>
-      <div class="max-w-lg mx-auto my-12">
+      <!-- <div class="max-w-lg mx-auto my-12">
         <pagination
           :total-pages="totalPages"
           :total="total"
@@ -12,11 +12,13 @@
           @pagechanged="showMore"
         >
         </pagination>
-      </div>
+      </div> -->
+      <!-- <TailWind /> -->
       <!-- <ActivityCard /> -->
       <!-- <SwiperDiscoveryActivity :activities="items" /> -->
       <!-- <SwiperPartner :partners="items" /> -->
-      <SwiperNewsHonor :news-honors="items" />
+      <!-- <SwiperNewsHonor :news-honors="items" /> -->
+      <MixContent />
     </client-only>
   </div>
 </template>

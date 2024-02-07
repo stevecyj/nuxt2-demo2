@@ -16,8 +16,8 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    { src: '~/assets/scss/pagination.scss', lang: 'scss' },
-    { src: '~/assets/scss/activityCard.scss', lang: 'scss' },
+    { src: '~/assets/scss/components/pagination.scss', lang: 'scss' },
+    { src: '~/assets/scss/components/activityCard.scss', lang: 'scss' },
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

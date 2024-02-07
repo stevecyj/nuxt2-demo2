@@ -1,5 +1,5 @@
 <template>
-  <div class="video-course">
+  <div class="discovery-activity">
     <div
       v-swiper:mySwiper="swiperOption"
       class="swiper-container bg-tertiary-100"
@@ -18,6 +18,7 @@
       <div slot="scrollbar" class="swiper-scrollbar"></div>
       <div slot="button-prev" class="swiper-button-prev"></div>
       <div slot="button-next" class="swiper-button-next"></div>
+      <div class="swiper-button-menu_dots"></div>
     </div>
   </div>
 </template>
@@ -57,9 +58,7 @@ export default {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
         },
-        // slidesPerView: 4,
-        // spaceBetween: 0,
-        freeMode: true,
+        centeredSlides: true,
         breakpoints: {
           1536: {
             slidesPerView: 4,
@@ -90,14 +89,14 @@ export default {
   },
   mounted() {
     // console.log('Current Swiper instance object', this.mySwiper)
-    // this.mySwiper.slideTo(3, 1000, false)
+    this.mySwiper.slideTo(3, 1000, false)
   },
 }
 </script>
 <style lang="scss">
 @import '@/scss/variables.scss';
 
-.video-course {
+.discovery-activity {
   .swiper-container {
     /* --swiper-theme-color: #ff6600; */
     padding-bottom: 188px;
@@ -205,6 +204,21 @@ export default {
     }
   }
 
+  .swiper-button-menu_dots {
+    right: 8%;
+    left: auto;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 44px;
+      height: 44px;
+      background: url('/icon/icon-menu-dots.svg') no-repeat;
+      background-size: 100%;
+    }
+  }
+
+  .swiper-button-menu_dots,
   .swiper-button-prev,
   .swiper-button-next {
     position: absolute;
@@ -230,6 +244,10 @@ export default {
     .swiper-button-next {
       right: 15%;
     }
+    .swiper-button-menu_dots {
+      right: 9%;
+    }
+    .swiper-button-menu_dots,
     .swiper-button-prev,
     .swiper-button-next {
       top: 85.5%;
@@ -242,6 +260,10 @@ export default {
     .swiper-button-next {
       right: 12%;
     }
+    .swiper-button-menu_dots {
+      right: 6.5%;
+    }
+    .swiper-button-menu_dots,
     .swiper-button-prev,
     .swiper-button-next {
       top: 85.5%;
@@ -254,6 +276,11 @@ export default {
     .swiper-button-next {
       right: 12%;
     }
+    .swiper-button-menu_dots {
+      right: 7.7%;
+    }
+
+    .swiper-button-menu_dots,
     .swiper-button-prev,
     .swiper-button-next {
       top: 85.5%;
@@ -266,6 +293,10 @@ export default {
     .swiper-button-next {
       right: 6.5%;
     }
+    .swiper-button-menu_dots {
+      right: 3%;
+    }
+    .swiper-button-menu_dots,
     .swiper-button-prev,
     .swiper-button-next {
       top: 87.5%;
@@ -278,6 +309,10 @@ export default {
     .swiper-button-next {
       right: 7%;
     }
+    .swiper-button-menu_dots {
+      right: 4%;
+    }
+    .swiper-button-menu_dots,
     .swiper-button-prev,
     .swiper-button-next {
       top: 87%;

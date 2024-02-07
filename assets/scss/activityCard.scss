@@ -1,0 +1,9 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer components {
+  .activity-card {
+    @apply flex overflow-hidden relative flex-col justify-center pb-12 2xl:px-2 xl:px-2 text-xl font-medium text-white rounded-2xl aspect-[0.71] w-full bg-no-repeat bg-cover bg-center bg-blend-overlay;
+  }
+}

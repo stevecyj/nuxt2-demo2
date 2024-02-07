@@ -1,7 +1,7 @@
 <template>
   <div>
     <main
-      class="flex overflow-hidden relative flex-col justify-center pb-12 2xl:px-2 xl:px-2 text-xl font-medium text-white rounded-2xl aspect-[0.71] w-full bg-no-repeat bg-cover bg-center bg-blend-overlay"
+      class="activity-card"
       :style="{
         backgroundImage: `url(https://picsum.photos/412/580),linear-gradient( transparent 20%, #032F9F 75%)`,
       }"

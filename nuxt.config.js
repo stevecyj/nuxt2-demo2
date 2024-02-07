@@ -15,7 +15,10 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [{ src: '~/assets/scss/pagination.scss', lang: 'scss' }],
+  css: [
+    { src: '~/assets/scss/pagination.scss', lang: 'scss' },
+    { src: '~/assets/scss/activityCard.scss', lang: 'scss' },
+  ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: ['~/plugins/swiper.js'],

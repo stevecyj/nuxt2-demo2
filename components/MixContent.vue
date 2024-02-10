@@ -49,11 +49,11 @@
                 Ultrices iaculis turpis viverra urna nisi sollicitudin mattis
                 non tellus.
               </div>
-              <div class="mt-2 font-medium text-center max-md:max-w-full">
+              <div class="mt-2 font-medium text-left max-md:max-w-full">
                 20:00 PM ~ 22:00 PM
               </div>
               <button
-                class="justify-center self-start px-9 py-3 mt-4 text-base font-bold tracking-wide capitalize whitespace-nowrap border border-solid border-[color:var(--Basic-White,#FFF)] rounded-[100px] max-md:px-5"
+                class="justify-center self-start px-9 py-3 mt-4 text-base font-bold tracking-wide text-white capitalize whitespace-nowrap bg-blue-800 border border-solid border-[color:var(--Black-Grey-500,#666)] rounded-[100px] max-md:px-5"
               >
                 深入了解
               </button>
@@ -65,12 +65,18 @@
         <div class="flex flex-col grow max-md:mt-10 max-md:max-w-full">
           <div class="justify-center bg-white rounded-2xl max-md:max-w-full">
             <div class="flex gap-5 max-md:flex-col max-md:gap-0 max-md:">
-              <div class="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
-                <img
+              <div class="flex flex-col w-6/12 max-lg:ml-0 max-lg:w-full">
+                <div
+                  class="mask grow w-full aspect-[1.09] bg-no-repeat bg-cover bg-center bg-blend-overlay rounded-t-2xl md:rounded-l-2xl"
+                  :style="{
+                    backgroundImage: `url(https://picsum.photos/324/298),linear-gradient( transparent 20%, transparent 75%)`,
+                  }"
+                ></div>
+                <!-- <img
                   loading="lazy"
-                  srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/601c8020e9464c8fc53c514ded87d5ec82c1ba482883ab40bca80c2391398dbb?apiKey=9fc21b4d50c14bdb9f2af6f121469acd&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/601c8020e9464c8fc53c514ded87d5ec82c1ba482883ab40bca80c2391398dbb?apiKey=9fc21b4d50c14bdb9f2af6f121469acd&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/601c8020e9464c8fc53c514ded87d5ec82c1ba482883ab40bca80c2391398dbb?apiKey=9fc21b4d50c14bdb9f2af6f121469acd&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/601c8020e9464c8fc53c514ded87d5ec82c1ba482883ab40bca80c2391398dbb?apiKey=9fc21b4d50c14bdb9f2af6f121469acd&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/601c8020e9464c8fc53c514ded87d5ec82c1ba482883ab40bca80c2391398dbb?apiKey=9fc21b4d50c14bdb9f2af6f121469acd&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/601c8020e9464c8fc53c514ded87d5ec82c1ba482883ab40bca80c2391398dbb?apiKey=9fc21b4d50c14bdb9f2af6f121469acd&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/601c8020e9464c8fc53c514ded87d5ec82c1ba482883ab40bca80c2391398dbb?apiKey=9fc21b4d50c14bdb9f2af6f121469acd&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/601c8020e9464c8fc53c514ded87d5ec82c1ba482883ab40bca80c2391398dbb?apiKey=9fc21b4d50c14bdb9f2af6f121469acd&"
+                  srcSet="https://picsum.photos/324/298"
                   class="grow w-full aspect-[1.09]"
-                />
+                /> -->
               </div>
               <div class="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
                 <div
@@ -88,11 +94,11 @@
                     Eget ultricies nulla rutrum et mattis bibendum rhoncus cras
                     est. Ultrices iaculis turpis viverra urna nisi
                   </div>
-                  <div class="mt-3 font-medium text-center">
+                  <div class="mt-3 font-medium text-left">
                     20:00 PM ~ 22:00 PM
                   </div>
                   <button
-                    class="justify-center px-9 py-3 mt-4 text-base font-bold tracking-wide text-white capitalize whitespace-nowrap bg-blue-800 border border-solid border-[color:var(--Black-Grey-500,#666)] rounded-[100px] max-md:px-5"
+                    class="justify-center self-start px-9 py-3 mt-4 text-base font-bold tracking-wide text-white capitalize whitespace-nowrap bg-blue-800 border border-solid border-[color:var(--Black-Grey-500,#666)] rounded-[100px] max-md:px-5"
                   >
                     深入了解
                   </button>
@@ -104,11 +110,17 @@
         <div class="justify-center mt-6 bg-white rounded-2xl max-md:max-w-full">
           <div class="flex gap-5 max-md:flex-col max-md:gap-0 max-md:">
             <div class="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
-              <img
+              <div
+                class="mask grow w-full aspect-[1.09] bg-no-repeat bg-cover bg-center bg-blend-overlay rounded-t-2xl md:rounded-l-2xl"
+                :style="{
+                  backgroundImage: `url(https://picsum.photos/324/298),linear-gradient( transparent 20%, transparent 75%)`,
+                }"
+              ></div>
+              <!-- <img
                 loading="lazy"
                 srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/0c6fd3342cf5ff0438cb634f772d222089590ee637ef3a3aaa782c6df912d0a9?apiKey=9fc21b4d50c14bdb9f2af6f121469acd&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/0c6fd3342cf5ff0438cb634f772d222089590ee637ef3a3aaa782c6df912d0a9?apiKey=9fc21b4d50c14bdb9f2af6f121469acd&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/0c6fd3342cf5ff0438cb634f772d222089590ee637ef3a3aaa782c6df912d0a9?apiKey=9fc21b4d50c14bdb9f2af6f121469acd&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/0c6fd3342cf5ff0438cb634f772d222089590ee637ef3a3aaa782c6df912d0a9?apiKey=9fc21b4d50c14bdb9f2af6f121469acd&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/0c6fd3342cf5ff0438cb634f772d222089590ee637ef3a3aaa782c6df912d0a9?apiKey=9fc21b4d50c14bdb9f2af6f121469acd&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/0c6fd3342cf5ff0438cb634f772d222089590ee637ef3a3aaa782c6df912d0a9?apiKey=9fc21b4d50c14bdb9f2af6f121469acd&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/0c6fd3342cf5ff0438cb634f772d222089590ee637ef3a3aaa782c6df912d0a9?apiKey=9fc21b4d50c14bdb9f2af6f121469acd&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/0c6fd3342cf5ff0438cb634f772d222089590ee637ef3a3aaa782c6df912d0a9?apiKey=9fc21b4d50c14bdb9f2af6f121469acd&"
                 class="grow w-full aspect-[1.09]"
-              />
+              /> -->
             </div>
             <div class="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
               <div
@@ -124,11 +136,11 @@
                   Eget ultricies nulla rutrum et mattis bibendum rhoncus cras
                   est. Ultrices iaculis turpis viverra urna nisi
                 </div>
-                <div class="mt-3 font-medium text-center">
+                <div class="mt-3 font-medium text-left">
                   20:00 PM ~ 22:00 PM
                 </div>
                 <button
-                  class="justify-center px-9 py-3 mt-4 text-base font-bold tracking-wide text-white capitalize whitespace-nowrap bg-blue-800 border border-solid border-[color:var(--Black-Grey-500,#666)] rounded-[100px] max-md:px-5"
+                  class="justify-center self-start px-9 py-3 mt-4 text-base font-bold tracking-wide text-white capitalize whitespace-nowrap bg-blue-800 border border-solid border-[color:var(--Black-Grey-500,#666)] rounded-[100px] max-md:px-5"
                 >
                   深入了解
                 </button>
@@ -140,3 +152,13 @@
     </div>
   </section>
 </template>
+<style lang="scss" scoped>
+.mask {
+  mask-image: linear-gradient(black 75%, transparent 100%);
+}
+@media (min-width: 768px) {
+  .mask {
+    mask-image: linear-gradient(to right, black 75%, transparent 100%);
+  }
+}
+</style>

@@ -19,6 +19,7 @@
       <!-- <SwiperPartner :partners="items" /> -->
       <!-- <SwiperNewsHonor :news-honors="items" /> -->
       <!-- <MixContent /> -->
+      <svg-icon icon-class="icon-chevron-left" />
     </client-only>
   </div>
 </template>

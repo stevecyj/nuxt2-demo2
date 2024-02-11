@@ -1,60 +1,36 @@
 <template>
   <div>
-    <div class="flex justify-end">
-      <ul class="pagination bg-white p-2 shadow-sm rounded">
-        <li class="pagination-item">
-          <span
-            v-if="isInFirstPage"
-            class="rounded-l rounded-sm border border-gray-100 px-3 py-2 cursor-not-allowed no-underline text-gray-600 h-10"
-            >&laquo;</span
-          >
-          <a
-            v-else
-            class="rounded-l rounded-sm border-t border-b border-l border-gray-100 px-3 py-2 text-gray-600 hover:bg-gray-100 no-underline"
-            href="#"
-            role="button"
-            rel="prev"
-            @click.prevent="onClickFirstPage"
-          >
-            &laquo;
-          </a>
-        </li>
-
-        <li class="pagination-item">
+    <div
+      class="flex gap-2.5 justify-center items-center text-base leading-6 whitespace-nowrap text-slate-400"
+    >
+      <ul class="flex gap-3 self-stretch pr-5">
+        <li class="w-6 h-6">
           <button
             type="button"
             :disabled="isInFirstPage"
             aria-label="Go to previous page"
-            class="rounded-sm border border-gray-100 px-3 py-2 hover:bg-gray-100 text-gray-600 no-underline mx-2 text-sm"
+            class="self-stretch my-auto ml-2 w-6 h-6 aspect-square"
             :class="{ 'cursor-not-allowed': isInFirstPage }"
             @click="onClickPreviousPage"
           >
-            Previous
+            <svg-icon icon-class="fi-br-angel-left" class="" />
           </button>
         </li>
 
-        <li v-for="page in pages" :key="page.name" class="pagination-item">
+        <li v-for="page in pages" :key="page.name">
           <span
             v-if="isPageActive(page.name)"
-            class="rounded-sm border border-blue-100 px-3 py-2 bg-blue-100 no-underline text-blue-500 cursor-not-allowed mx-2"
+            class="justify-center items-center px-[9px] py-1 w-6 h-6 text-blue-800 aspect-square bg-slate-300 rounded-[40px]"
             >{{ page.name }}</span
           >
           <a
             v-else
-            class="rounded-sm border border-gray-100 px-3 py-2 hover:bg-gray-100 text-gray-600 no-underline mx-2"
+            class=""
             href="#"
             role="button"
             @click.prevent="onClickPage(page.name)"
             >{{ page.name }}</a
           >
-          <!-- <button
-            type="button"
-            :disabled="page.isDisabled"
-            :class="{ active: isPageActive(page.name) }"
-            @click="onClickPage(page.name)"
-          >
-            {{ page.name }}
-          </button> -->
         </li>
 
         <li class="pagination-item">
@@ -62,35 +38,12 @@
             type="button"
             :disabled="isInLastPage"
             aria-label="Go to next page"
-            class="rounded-sm border border-gray-100 px-3 py-2 hover:bg-gray-100 text-gray-600 no-underline mx-2 text-sm"
+            class="self-stretch my-auto w-6 h-6 aspect-square"
             :class="{ 'cursor-not-allowed': isInLastPage }"
             @click="onClickNextPage"
           >
-            Next
+            <svg-icon icon-class="fi-br-angle-right" />
           </button>
-        </li>
-
-        <li class="pagination-item">
-          <!-- <button
-					type="button"
-					@click="onClickLastPage"
-					:disabled="isInLastPage"
-					aria-label="Go to last page"
-				>Last</button> -->
-          <a
-            v-if="hasMorePages"
-            class="rounded-r rounded-sm border border-gray-100 px-3 py-2 hover:bg-gray-100 text-gray-600 no-underline"
-            href="#"
-            rel="next"
-            role="button"
-            @click.prevent="onClickLastPage"
-            >&raquo;</a
-          >
-          <span
-            v-else
-            class="rounded-r rounded-sm border border-gray-100 px-3 py-2 hover:bg-gray-100 text-gray-600 no-underline cursor-not-allowed"
-            >&raquo;</span
-          >
         </li>
       </ul>
     </div>

@@ -48,11 +48,13 @@
             >{{ page.name }}</a
           >
           <!-- <button
-					type="button"
-					@click="onClickPage(page.name)"
-					:disabled="page.isDisabled"
-					:class="{ active: isPageActive(page.name) }"
-				>{{ page.name }}</button> -->
+            type="button"
+            :disabled="page.isDisabled"
+            :class="{ active: isPageActive(page.name) }"
+            @click="onClickPage(page.name)"
+          >
+            {{ page.name }}
+          </button> -->
         </li>
 
         <li class="pagination-item">

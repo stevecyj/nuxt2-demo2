@@ -43,11 +43,11 @@
             </section>
           </header>
         </div>
-        <div class="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
+        <div class="flex flex-col ml-5 w-6/12 max-xl:ml-0 max-md:w-full">
           <div class="flex flex-col grow max-md:mt-10 max-md:max-w-full">
             <div class="justify-center bg-white rounded-2xl max-md:max-w-full">
-              <div class="flex gap-5 max-md:flex-col max-md:gap-0 max-md:">
-                <div class="flex flex-col w-6/12 max-lg:ml-0 max-lg:w-full">
+              <div class="flex gap-5 max-md:flex-col max-xl:gap-0 max-md:">
+                <div class="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
                   <div
                     class="mask grow w-full aspect-[1.09] bg-no-repeat bg-cover bg-center bg-blend-overlay rounded-t-2xl md:rounded-none md:rounded-l-2xl"
                     :style="{
@@ -77,7 +77,7 @@
                       20:00 PM ~ 22:00 PM
                     </div>
                     <button
-                      class="justify-center self-start px-9 py-3 mt-4 text-base font-bold tracking-wide text-white capitalize whitespace-nowrap bg-blue-800 border border-solid border-[color:var(--Black-Grey-500,#666)] rounded-[100px] max-md:px-5"
+                      class="justify-center self-start px-8 py-3 mt-4 text-base font-bold tracking-wide text-white capitalize whitespace-nowrap bg-blue-800 border border-solid border-[color:var(--Black-Grey-500,#666)] rounded-[100px] max-md:px-5"
                     >
                       深入了解
                     </button>
@@ -89,7 +89,7 @@
           <div
             class="justify-center mt-6 bg-white rounded-2xl max-md:max-w-full"
           >
-            <div class="flex gap-5 max-md:flex-col max-md:gap-0 max-md:">
+            <div class="flex gap-5 max-md:flex-col max-xl:gap-0 max-md:">
               <div class="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
                 <div
                   class="mask grow w-full aspect-[1.09] bg-no-repeat bg-cover bg-center bg-blend-overlay rounded-t-2xl md:rounded-none md:rounded-l-2xl"
@@ -118,7 +118,7 @@
                     20:00 PM ~ 22:00 PM
                   </div>
                   <button
-                    class="justify-center self-start px-9 py-3 mt-4 text-base font-bold tracking-wide text-white capitalize whitespace-nowrap bg-blue-800 border border-solid border-[color:var(--Black-Grey-500,#666)] rounded-[100px] max-md:px-5"
+                    class="justify-center self-start px-8 py-3 mt-4 text-base font-bold tracking-wide text-white capitalize whitespace-nowrap bg-blue-800 border border-solid border-[color:var(--Black-Grey-500,#666)] rounded-[100px] max-md:px-5"
                   >
                     深入了解
                   </button>

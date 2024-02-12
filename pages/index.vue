@@ -4,11 +4,11 @@
       <div class="h-2 w-100 bg-blue-500"></div>
       <div class="max-w-lg mx-auto my-12">
         <pagination
-          :total-pages="totalPages"
-          :total="total"
-          :per-page="perPage"
-          :current-page="currentPage"
-          :has-more-pages="hasMorePages"
+          :total-pages="pagi.totalPages"
+          :total="pagi.total"
+          :per-page="pagi.perPage"
+          :current-page="pagi.currentPage"
+          :has-more-pages="pagi.hasMorePages"
           @pagechanged="showMore"
         >
         </pagination>
@@ -18,7 +18,7 @@
       <!-- <SwiperDiscoveryActivity :activities="items" /> -->
       <!-- <SwiperPartner :partners="items" /> -->
       <!-- <SwiperNewsHonor :news-honors="items" /> -->
-      <!-- <MixContent /> -->
+      <MixContent />
     </client-only>
   </div>
 </template>
@@ -35,12 +35,14 @@ export default {
   data() {
     return {
       // pagination
-      page: 1,
-      totalPages: 4,
-      total: 40,
-      perPage: 10,
-      currentPage: 1,
-      hasMorePages: true,
+      pagi: {
+        page: 1,
+        totalPages: 4,
+        total: 40,
+        perPage: 10,
+        currentPage: 1,
+        hasMorePages: true,
+      },
       items: [],
     }
   },
@@ -50,8 +52,8 @@ export default {
   },
   methods: {
     showMore(page) {
-      this.page = page
-      this.currentPage = page
+      this.pagi.page = page
+      this.pagi.currentPage = page
     },
   },
 }

@@ -26,7 +26,7 @@ export const generateData = () => {
 
 export const generateDataActivity = () => {
   const items = []
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 41; i++) {
     const id = Math.floor(Math.random() * 1000)
     const mediaId = Math.random().toString(36).substring(2, 15)
     const topics = ['主題講座', '科技英文', '商用基礎文法', '財經英文']
@@ -37,9 +37,10 @@ export const generateDataActivity = () => {
       topic,
       date: '2024/01/31 FRI',
       time: '20:00 PM ~ 22:00 PM',
-      title: '語言共舞：跨足多國文化之旅',
+      title: '語言共舞：跨足多國文化之旅' + id,
       description:
         'platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at',
+      imgSrc: 'https://picsum.photos/412/580',
       // type: 'YOUTUBE',
       // descriptionHtml:
       //   '財經英文 8. Advanced Vocabulary for Financial News 8._Monetary Policy',

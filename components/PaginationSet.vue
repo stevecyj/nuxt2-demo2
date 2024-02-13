@@ -3,13 +3,13 @@
     <div
       class="flex gap-2.5 justify-center items-center text-base leading-6 whitespace-nowrap text-slate-400"
     >
-      <ul class="flex gap-3 self-stretch pr-5">
+      <ul class="flex gap-3 self-stretch p-4">
         <li class="w-6 h-6">
           <button
             type="button"
             :disabled="isInFirstPage"
             aria-label="Go to previous page"
-            class="self-stretch my-auto ml-2 w-6 h-6 aspect-square"
+            class="self-stretch my-auto ml-2 w-7 h-7 aspect-square"
             :class="{ 'cursor-not-allowed': isInFirstPage }"
             @click="onClickPreviousPage"
           >
@@ -20,7 +20,7 @@
         <li v-for="page in pages" :key="page.name">
           <span
             v-if="isPageActive(page.name)"
-            class="justify-center items-center px-[9px] py-1 w-6 h-6 text-blue-800 aspect-square bg-slate-300 rounded-[40px]"
+            class="justify-center items-center px-[9px] py-1 w-7 h-7 text-blue-800 aspect-square bg-primary-100 rounded-[40px]"
             >{{ page.name }}</span
           >
           <a
